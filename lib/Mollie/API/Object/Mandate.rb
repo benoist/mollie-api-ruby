@@ -2,12 +2,11 @@ module Mollie
   module API
     module Object
       class Mandate < Base
-        STATUS_PENDING = "pending"
         STATUS_VALID   = "valid"
         STATUS_INVALID = "invalid"
 
         attr_accessor :resource,
-        			  :id,
+                      :id,
                       :status,
                       :method,
                       :customerId,
